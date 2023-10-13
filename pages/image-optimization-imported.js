@@ -2,6 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Layout from "../components/layout";
 import pic from "../public/images/patrick.1200x1200.png";
+import space from  "../public/images/space.png";
 
 export default function Page() {
   const [error, setError] = useState(false);
@@ -14,7 +15,7 @@ export default function Page() {
         <hr />
         <Image
           id="pic"
-          src={pic}
+          src={space}
           width={100}
           height={100}
           quality={50}
