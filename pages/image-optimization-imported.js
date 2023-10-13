@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Layout from "../components/layout";
 import pic from "../public/images/patrick.1200x1200.png";
-import space from  "../public/images/space.png";
+import space from  "../public/images/Space.jpg";
 
 export default function Page() {
   const [error, setError] = useState(false);
@@ -16,8 +16,8 @@ export default function Page() {
         <Image
           id="pic"
           src={space}
-          width={100}
-          height={100}
+          width={600}
+          height={200}
           quality={50}
           onLoadingComplete={() => setLoading(false)}
           onError={() => setError(true)}
@@ -27,8 +27,8 @@ export default function Page() {
         {!loading && !error && (
           <p>
             ✅ Test passed.<br />
-            You should see the image in a 100x100 size.
-            The original image dimension: 1200 x 1200.
+            You should see the image in a 600 x 200 size.
+            The original image dimension: 6144 x 2081.
           </p>
         )}
         {!loading && error && (

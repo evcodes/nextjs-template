@@ -13,9 +13,9 @@ export default function Page() {
         <hr />
         <Image
           id="pic"
-          src="https://images.unsplash.com/photo-1632730038107-77ecf95635ab"
-          width={100}
-          height={100}
+          src="https://live.staticflickr.com/65535/53151475103_dba615a3c8_6k_d.jpg"
+          width={600}
+          height={200}
           quality={50}
           onLoadingComplete={() => setLoading(false)}
           onError={() => setError(true)}
@@ -25,8 +25,8 @@ export default function Page() {
         {!loading && !error && (
           <p>
             ✅ Test passed.<br />
-            You should see the image in a 100x100 size.
-            The original image dimension are 2268 x 4032.
+            You should see the image in a 600x200 size.
+            The original image dimension: 6144 x 2081.
           </p>
         )}
         {!loading && error && (
